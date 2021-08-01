@@ -16,9 +16,9 @@ Strengths: Automatically adapts to non-linear effects of features and has enough
 
 Weaknesses: Computationally expensive. As an ensemble method with slow learning rate, requires a large number of fitted estimators (here, 750 weak learners) to be stored in memory to evaluate new predictions.
 
-The performance of each model on the test set can be estimated by the mean 10-fold cross validated ROC-AUC score on the training set. This provides a decent estimate for how the models will perform on data on which the models have not ben trained.
-
 ## Test ROC-AUC Estimates
+The performance of each model on the test set can be estimated by the mean 10-fold cross validated ROC-AUC score on the training set. This provides a decent estimate for how the models will perform on data on which the models have not been trained.
+
 RFECV: 0.7666
 
 AdaBoost: 0.8040
