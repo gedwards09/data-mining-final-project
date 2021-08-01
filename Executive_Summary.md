@@ -2,7 +2,7 @@
 
 Ultimately two models were selected with the best performance in each family. In the GLM family, cross-validated recursive feature elimination was used to select the most relevent features to fit with logistic regression. In the non-GLM family the best model was AdaBoost with low learning rate.
 
-## GLM family:
+## GLM family
 Model: Cross-validated recursive feature elimination (RFECV)
 
 Strengths: Automatically excludes variables determined to be unimportant. Can fit the model to use only features which perform best under the selected metric (here, ROC-AUC score) with cross-validation. 
@@ -20,6 +20,7 @@ The performance of each model on the test set can be estimated by the mean 10-fo
 
 ## Test ROC-AUC Estimates
 RFECV: 0.7666
+
 AdaBoost: 0.8040
 
 Based on these estimates, AdaBoost would be expected to outperform RFECV on the test set. To demonstrate this, the model performance could be judged by their confusion matrices on a test or validation set after determining the optimal thresholds to use for classifcation.
